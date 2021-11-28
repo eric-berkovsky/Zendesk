@@ -1,4 +1,13 @@
 h1 {
     text-align: center;
+    color: #03363D;
+}
+
+h4 {
+    text-align: center;
     color: #17494D;
+}
+
+.border-danger {
+    border-color: blue;
 }
