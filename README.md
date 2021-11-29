@@ -49,14 +49,6 @@ When you are done, you can quit the server by pressing CTRL + C. Then, enter 'de
 
 Feel free to contact me if you have any questions!
 
-# Sample Ticket Viewer Home Page
-
-<img width="662" alt="Screen Shot 2021-11-29 at 12 54 08 AM" src="https://user-images.githubusercontent.com/52947849/143836931-c2756e96-ffa1-4fcd-a131-f81c2ac5e94e.png">
-
-# Sample Ticket Page
-
-<img width="1138" alt="Screen Shot 2021-11-29 at 12 54 47 AM" src="https://user-images.githubusercontent.com/52947849/143837029-9a8f6b40-b0c3-45d2-9e69-7919fe799964.png">
-
 # Testing
 
 This program was tested using Python's unittest framework and its mock library. The testing file, tests.py, can be found in the ZendeskCodingChallenge folder. Every function in functions.py, which is the file that handles calls to Zendesk's API, is tested with mock API calls. To run all the tests, enter:
@@ -64,4 +56,11 @@ This program was tested using Python's unittest framework and its mock library. 
 python3 manage.py test
 ```
 
+# Sample Ticket Viewer Home Page
+
+<img width="662" alt="Screen Shot 2021-11-29 at 12 54 08 AM" src="https://user-images.githubusercontent.com/52947849/143836931-c2756e96-ffa1-4fcd-a131-f81c2ac5e94e.png">
+
+# Sample Ticket Page
+
+<img width="1138" alt="Screen Shot 2021-11-29 at 12 54 47 AM" src="https://user-images.githubusercontent.com/52947849/143837029-9a8f6b40-b0c3-45d2-9e69-7919fe799964.png">
 
