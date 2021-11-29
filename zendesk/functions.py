@@ -10,7 +10,7 @@ def get_api_response(url, payload=None):
     """
     Helper method which calls the Zendesk API given the url and optional parameters
     Throws exceptions if there was an issue with the response which are caught in views.py
-    Provides a way to funnel all errors through one method
+    Provides a way to funnel all API calls through one method
     @param url: URL in Zendesk API to query
     @param payload: Optional parameters for the HTTP request
     @return: The HTTP response
