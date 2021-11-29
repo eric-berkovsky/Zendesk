@@ -6,6 +6,7 @@ import zendesk.views
 
 urlpatterns = [
     path('', zendesk.views.index, name='index'),
-    path('ticket/<int:ticket_id>/', zendesk.views.ticket, name='ticket'),
+    path('ticket/<str:ticket_id>/', zendesk.views.ticket, name='ticket'),
+    path('error/', zendesk.views.error, name='error'),
     path('admin/', admin.site.urls),
 ]

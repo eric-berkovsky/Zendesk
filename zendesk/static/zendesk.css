@@ -8,6 +8,16 @@ h4 {
     color: #17494D;
 }
 
-.border-danger {
-    border-color: blue;
+#ticket {
+    background-color: #17494D;
+    color: #F3F0EE;
+}
+
+#return_button {
+    background-color: #ECE0CE;
+}
+
+#ticket_card {
+    background-color: #F3F0EE;
+    border: 2px solid #03363D;
 }

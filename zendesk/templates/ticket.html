@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Ticket #{{ ticket_id }}</title>
-</head>
-<body>
-    <p>This is ticket {{ ticket_id }}</p>
-</body>
-</html>
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Ticket ID {{ ticket_id }} {% endblock %}
+{% block content %}
+<div class="container">
+    <p id="ticket" class="my-3 p-3 fs-4 fw-bolder">Ticket #{{ ticket_id }}, requested by {{ requester }}</p>
+    <p><strong>Ticket Status: </strong>{{ status|title }}</p>
+    <p><strong>Created: </strong>{{ date }}</p>
+    <p><strong>Subject: </strong>{{ subject }}</p>
+    <p><strong>Description: </strong>{{ description }}</p>
+    <a id="return_button" class="btn mb-3" href="{% url 'index' %}" role="button">Return home</a>
+</div>
+{% endblock %}
