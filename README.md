@@ -45,6 +45,10 @@ python3 manage.py runserver
 Then, go to your browser and enter http://127.0.0.1:8000/. The program should now appear. 
 One important note: your program is running with Debug Mode on. This is so that Django will handle static files like css for you. If you want to use this program in production you will need to set Debug Mode to False (this can be done in settings.py) and configure a web server such as nginx to handle static files for you. 
 
+When you are done, you can quit the server by pressing CTRL + C. Then, enter 'deactivate' to exit your virtual environment. 
+
+Feel free to contact me if you have any questions!
+
 # Sample Ticket Viewer Home Page
 
 <img width="662" alt="Screen Shot 2021-11-29 at 12 54 08 AM" src="https://user-images.githubusercontent.com/52947849/143836931-c2756e96-ffa1-4fcd-a131-f81c2ac5e94e.png">
