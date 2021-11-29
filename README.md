@@ -9,7 +9,7 @@ First, make sure you have python3 and git installed on your computer. Then, clon
 git clone https://github.com/eric-berkovsky/Zendesk-Ticket-Viewer.git
 ```
 
-Next, enter this new directory which contains the program. Then, create a virtual environment for the program to run in. Enter this new virtual environment. 
+Next, enter this new directory which contains the program then create a virtual environment for the program to run in. Enter this new virtual environment. 
 ```
 cd Zendesk-Ticket-Viewer 
 python3 -m venv venv
