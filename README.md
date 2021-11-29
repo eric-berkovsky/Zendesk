@@ -27,7 +27,7 @@ You will need to generate a Django secret key. Open the Python interpreter by ty
 from django.core.management.utils import get_random_secret_key
 print(get_random_secret_key())
 ```
-Copy the output from the print statement then type CTRL + D to close the Python interpreter. Paste this secret key into config.py where it says 'enter_your_django_secret_key'.
+Copy the output from the print statement then type CTRL + D to close the Python interpreter. Paste this secret key into config.py, replacing where it says 'enter_your_django_secret_key'.
 Then, enter your Zendesk subdomain where it says 'enter_your_subdomain'. Enter your email address and API token in the designated spaces as well. If you do not have an API token you can generate one from your Zendesk account. Go to the Admin Center, then select Apps and Integrations on the left. Scroll down to Zendesk API and click Add API Token. 
 
 Go back to your command line and navigate to the main directory where manage.py is located. 
