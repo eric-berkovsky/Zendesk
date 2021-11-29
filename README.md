@@ -52,7 +52,7 @@ Feel free to contact me if you have any questions!
 
 # Testing
 
-This program was tested using Python's unittest framework and its mock library. The testing file, tests.py, can be found in the ZendeskCodingChallenge folder (not the tests.py inside zendesk!). Every function in functions.py, which is the file that handles calls to Zendesk's API, is tested with mock API calls. To run all the tests, enter:
+This program was tested using Python's unittest framework and its mock library. The testing file, tests.py, can be found in the ZendeskCodingChallenge folder. Every function in functions.py, which is the file that handles calls to Zendesk's API, is tested with mock API calls. To run all the tests, enter:
 ```
 python3 manage.py test
 ```
