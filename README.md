@@ -30,6 +30,18 @@ print(get_random_secret_key())
 Copy the output from the print statement then type CTRL + D to close the Python interpreter. Paste this secret key into config.py where it says 'enter_your_django_secret_key'.
 Then, enter your Zendesk subdomain where it says 'enter_your_subdomain'. Enter your email address and API key in the designated spaces as well. If you do not have an API key you can generate one from your Admin page. 
 
+Next, open settings.py in a text editor. It can be found in the ZendeskCodingChallenge folder. Find the line where it says 'DEBUG = True' and change it to 'DEBUG = False'.
+
+Go back to your command line and navigate to the main directory where manage.py is located. 
+
+Type in the following two commands:
+```
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
+
+
+
 # Sample Ticket Viewer Home Page
 
 <img width="662" alt="Screen Shot 2021-11-29 at 12 54 08 AM" src="https://user-images.githubusercontent.com/52947849/143836931-c2756e96-ffa1-4fcd-a131-f81c2ac5e94e.png">
