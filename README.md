@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ```
 
 Up next, you will need to configure the program to use your Zendesk credentials. Open the file config.py (inside the 'zendesk' directory) in a text editor or IDE. 
-First, you will need to generate a Django secret key. Open the Python interpreter by typing in python3 on your command line and entering. Once it loads, type in:
+You will need to generate a Django secret key. Open the Python interpreter by typing in python3 on your command line and entering. Once it loads, type in:
 ```
 from django.core.management.utils import get_random_secret_key
 print(get_random_secret_key())
