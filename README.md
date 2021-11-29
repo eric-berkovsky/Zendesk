@@ -1,6 +1,6 @@
 # Zendesk Ticket Viewer
 
-Welcome to my ticket viewer! This program fetches all the tickets in your Zendesk account and allows you to page through them. You can also click the View Ticket button on any of the tickets to view more information about it. This program was built using the Django web framework which provides a convenient way to make API calls and dynamically display information about tickets on the front-end. 
+Welcome to my ticket viewer! This browser-based program fetches all the tickets in your Zendesk account and allows you to page through them. You can also click the View Ticket button on any of the tickets to view more information about it. This program was built using the Django web framework which provides a convenient way to make API calls and dynamically generate information about tickets for the web page. 
 
 # How to Use
 
