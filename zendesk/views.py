@@ -58,7 +58,6 @@ def ticket(request, ticket_id):
     """
     try:
         zendesk_ticket = get_ticket(ticket_id)
-        print(type(zendesk_ticket))
         return render(request, 'ticket.html', {
             'ticket_id': zendesk_ticket['id'],
             'requester': get_user_name(zendesk_ticket['requester_id']),
