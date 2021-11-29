@@ -30,8 +30,6 @@ print(get_random_secret_key())
 Copy the output from the print statement then type CTRL + D to close the Python interpreter. Paste this secret key into config.py where it says 'enter_your_django_secret_key'.
 Then, enter your Zendesk subdomain where it says 'enter_your_subdomain'. Enter your email address and API key in the designated spaces as well. If you do not have an API key you can generate one from your Admin page. 
 
-Next, open settings.py in a text editor. It can be found in the ZendeskCodingChallenge folder. Find the line where it says 'DEBUG = True' and change it to 'DEBUG = False'.
-
 Go back to your command line and navigate to the main directory where manage.py is located. 
 
 Type in the following two commands:
@@ -40,7 +38,12 @@ python3 manage.py makemigrations
 python3 manage.py migrate
 ```
 
-
+Finally, it's time to run the program. Type in the following command:
+```
+python3 manage.py runserver
+```
+Then, go to your browser and enter http://127.0.0.1:8000/. The program should now appear. 
+One important note: your program is running with Debug Mode on. This is so that Django will handle static files like css for you. If you want to use this program in production you will need to set Debug Mode to False (this can be done in settings.py) and configure a web server such as nginx to handle static files for you. 
 
 # Sample Ticket Viewer Home Page
 
@@ -49,5 +52,12 @@ python3 manage.py migrate
 # Sample Ticket Page
 
 <img width="1138" alt="Screen Shot 2021-11-29 at 12 54 47 AM" src="https://user-images.githubusercontent.com/52947849/143837029-9a8f6b40-b0c3-45d2-9e69-7919fe799964.png">
+
+# Testing
+
+This program was tested using Python's unittest framework and its mock library. The testing file, tests.py, can be found in the ZendeskCodingChallenge folder. Every function in functions.py, which is the file that handles calls to Zendesk's API, is tested with mock API calls. To run all the tests, enter:
+```
+python3 manage.py test
+```
 
 
